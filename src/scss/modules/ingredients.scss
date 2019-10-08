@@ -1,0 +1,19 @@
+.ingredients-wrapper {
+  img {
+    border-radius: 50%;
+    height: auto;
+    max-height: 50px;
+    max-width: 50px;
+    width: 100%;
+  }
+  ul {
+    list-style-type: none;
+    @for $i from 6 through 9 {
+      &.d#{$i}{
+        li:nth-child(n+#{$i}) {
+          display: none;
+        }
+      }
+    }
+  }
+}

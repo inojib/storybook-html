@@ -1,0 +1,41 @@
+.email-wrapper {
+	background-color: $black;
+	color: $white;
+	font-family: $font-primary-cond;
+	padding: 50px;
+	width: 100%;
+	@media screen and (max-width: $small-screen) {
+		padding: 20px;
+	}
+	p {
+		margin: 10px 0 30px;
+	}
+	input {
+		vertical-align: top;
+		&[type=text] {
+			border: solid 4px $brown;
+			background-color:  $white;
+			font-size: 20px;
+			height: 65px;
+			padding: 0 20px;
+			width: calc(100% - 200px);
+			@media screen and (max-width: $small-screen) {
+				margin-bottom: 20px;
+				width: 100%;
+			}
+		}
+		&[type=submit] {
+			background-color: $brown;
+			border: 0;
+			color:  $white;
+			font-size: 18px;
+			font-weight: bold;
+			height: 65px;
+			text-align: center;
+			width: 180px;
+			@media screen and (max-width: $small-screen) {
+				width: 100%;
+			}
+		}
+	}
+}
