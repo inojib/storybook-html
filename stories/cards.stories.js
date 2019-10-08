@@ -22,25 +22,6 @@ export const ingredients = () => {
   const showItem = select('Items to show', showItemList, '6', 'Info');
   const link = text('Show more', 'See full ingredients list', 'Info');
 
-  function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("toggleBtn");
-
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more"; 
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
-      moreText.style.display = "inline";
-    }
-  }
-
-  // const button = document.querySelector('.js-toggle');
-  // button.addEventListener('click', test);
-
   return `<div class="ingredients-wrapper">
         <h1>${title}</h1>
         <img alt="img1" src="${img1}">
